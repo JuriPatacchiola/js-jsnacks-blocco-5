@@ -32,3 +32,14 @@ for (let i = 0; i < students.length; i++) {
 
 console.log(studentFound);
 // Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' }
+
+//cicle foreach
+let studentFoundFE = null;
+
+students.forEach(student => {
+  if (student.id === 2) {
+    studentFoundFE = student;
+  }
+});
+
+console.log(studentFoundFE);

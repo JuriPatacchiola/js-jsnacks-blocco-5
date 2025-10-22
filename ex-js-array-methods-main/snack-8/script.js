@@ -20,4 +20,15 @@ const students = [
 ];
 
 // Recupera la classe dello studente 'Marco Lanci'
+let studentClass = null;
+
+for (let i = 0; i < students.length; i++) {
+  const student = students[i]; // prendo lo studente corrente
+  if (student.name === 'Marco Lanci') {
+    studentClass = student.class;
+    break; // trovato, esco dal ciclo
+  }
+}
+
+console.log(studentClass);
 // Risultato: '3C'

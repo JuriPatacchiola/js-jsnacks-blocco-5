@@ -28,3 +28,19 @@ for (let i = 0; i < zucchine.length; i++) {
 
 console.log('Zucchine lunghe:', longZucchine);
 console.log('Zucchine corte:', shortZucchine);
+
+// cicle foreach 
+
+const longZucchineFE = [];
+const shortZucchineFE = [];
+
+zucchine.forEach(zucchina => {
+  if (zucchina.length >= 15) {
+    longZucchineFE.push(zucchina);
+  } else {
+    shortZucchineFE.push(zucchina);
+  }
+});
+
+console.log('Zucchine lunghe (forEach):', longZucchineFE);
+console.log('Zucchine corte (forEach):', shortZucchineFE);

@@ -10,3 +10,8 @@ for (let i = 0; i < people.length; i++) {
   console.log(person.name);     // stampo il nome
 }
 // Risultato: 'Paolo', 'Giulia', 'Marco'
+
+//con cicle foreach
+people.forEach(function(person) {
+  console.log(person.name);
+});

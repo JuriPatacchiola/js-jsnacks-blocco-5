@@ -8,3 +8,10 @@ for (let i = 0; i < numbers.length; i++) {
 }
 console.log(incrementedFor);
 // Risultato: [3, 9, 5, 8, 3, 88]
+
+//cicle foreach
+const incrementedForEach = [];
+numbers.forEach(num => {
+  incrementedForEach.push(num + 1);
+});
+console.log(incrementedForEach);

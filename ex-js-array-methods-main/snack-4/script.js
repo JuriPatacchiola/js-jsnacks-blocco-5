@@ -13,3 +13,10 @@ for (let i = 0; i < posts.length; i++) {
 }
 console.log(authorsFor);
 // Risultato: ['Marco', 'Luca', 'Fabrizio', 'Enrico']
+
+//cicle foreach
+const authorsForEach = [];
+posts.forEach(post => {
+  authorsForEach.push(post.author);
+});
+console.log(authorsForEach);

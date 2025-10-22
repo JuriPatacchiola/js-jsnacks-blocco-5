@@ -32,3 +32,15 @@ for (let i = 0; i < students.length; i++) {
 
 console.log(studentClass);
 // Risultato: '3C'
+
+// con cicle foreach
+
+let studentClassFE = null;
+
+students.forEach(student => {
+  if (student.name === 'Marco Lanci') {
+    studentClassFE = student.class;
+  }
+});
+
+console.log(studentClassFE);

@@ -10,3 +10,12 @@ for (let i = 0; i < nums.length; i++) {
 }
 console.log(evenFor);
 // Risultato: [2, 8, 4, 12]
+
+//cicle foreach
+const evenForEach = [];
+nums.forEach(num => {
+  if (num % 2 === 0) {
+    evenForEach.push(num);
+  }
+});
+console.log(evenForEach);
